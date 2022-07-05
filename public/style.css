@@ -1,0 +1,109 @@
+#video-grid {
+  display: flex;
+  justify-content: center;
+}
+
+video {
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+}
+
+.main-left {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-right {
+  flex: 0.2;
+  display: flex;
+  flex-direction: column;
+  background-color: darkslateblue;
+  border-left: 1px solid darkgoldenrod;
+}
+
+.main-videos {
+  flex-grow: 1;
+  background-color: darkslategray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-controls {
+  display: flex;
+  background-color: darkslateblue;
+  color: lightcyan;
+  padding: 5px;
+  justify-content: space-between;
+}
+
+.main-controls-block {
+  display: flex;
+  /* flex-direction: row; */
+}
+
+.main-controls-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 10px;
+  cursor: pointer;
+  min-width: 80px;
+}
+
+.leave-metting {
+  color: red;
+}
+
+.main-controls-button:hover {
+  background-color: rgb(78, 65, 164);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.main-header {
+  color: aliceblue;
+  text-align: center;
+}
+
+.main-chat-windows {
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+
+.main-message-container {
+  padding: 22px 12px;
+  display: flex;
+}
+
+.main-message-container input {
+  flex-grow: 1;
+  background-color: transparent;
+  border: 1px solid lightblue;
+  color: aliceblue;
+  height: 30px;
+}
+
+.messages {
+  color: aliceblue;
+  list-style: none;
+}
+
+.unmute .stop {
+  color: brown;
+}
